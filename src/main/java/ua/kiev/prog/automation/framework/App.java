@@ -4,13 +4,22 @@ import ua.kiev.prog.automation.framework.product.app.ProgKievUa;
 
 public class App
 {
-    static public void main(String[] args)
-    {
-        System.setProperty("webdriver.chrome.driver", "/home/iree/ChromeDriver/chromedriver");
+    static private boolean _standalone;
 
-        ProgKievUa product = new ProgKievUa();
-        product.forum().setURL("https://prog.kiev.ua/forum");
-        product.runTests();
+    static public boolean inStandalone() {
+        return _standalone;
+    }
+
+    static public void main(String[] args) {
+            if (args.length > 0 && args[0].equals("standalone")) {
+                _standalone = true;
+            }
+
+            System.setProperty("webdriver.chrome.driver", "/home/iree/ChromeDriver/chromedriver");
+
+            ProgKievUa product = new ProgKievUa();
+            product.forum().setURL("https://prog.kiev.ua/forum");
+            product.runTests();
 
     }
 }
