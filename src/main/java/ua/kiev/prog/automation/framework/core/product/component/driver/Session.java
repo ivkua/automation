@@ -8,27 +8,11 @@ import ua.kiev.prog.automation.framework.App;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Session
-{
-    /**
-     * Это приватное свойство с объектом драйвера Selenium RemoteWebDriver
-     */
+public class Session {
     private RemoteWebDriver _driver;
 
-    /**
-     * Конструктор объекта
-     */
-    public Session ()
-    {
+    public Session (){}
 
-    }
-
-    /**
-     * Этот метод возвращает Selenium RemoteWebDriver
-     * Если драйвер еще не был создан, то создаем его
-     *
-     * @return RemoteWebDriver - драйвер сессии
-     */
     final public RemoteWebDriver driver ()
     {
         if (this._driver == null) {
@@ -48,9 +32,6 @@ public class Session
         return this._driver;
     }
 
-    /**
-     * Этот метод закрывает драйвер и сессию
-     */
     final public void close ()
     {
         if (this._driver != null) {
