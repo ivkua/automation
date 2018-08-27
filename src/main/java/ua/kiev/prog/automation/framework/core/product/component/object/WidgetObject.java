@@ -8,15 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.function.Function;
 
-/**
- * ////////////////////////////////////////////////////////// *
- * Automation Framework                                       *
- * Automation Course for https://prog.kiev.ua/                *
- * ---------------------------------------------------------- *
- * Created by Yurii Voronenko                                 *
- * Email: yurii.voronenko@gmail.com                           *
- * ////////////////////////////////////////////////////////// *
- */
 public class WidgetObject {
     private RemoteWebDriver _driver;
     private By              _locator;
