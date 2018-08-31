@@ -7,34 +7,14 @@ import ua.kiev.prog.automation.framework.product.app.progkievua.Forum;
 import ua.kiev.prog.automation.framework.product.app.progkievua.forum.base.ForumPageObject;
 import ua.kiev.prog.automation.framework.product.app.progkievua.forum.dz.BoardPage;
 
-/**
- * ////////////////////////////////////////////////////////// *
- * Automation Framework                                       *
- * Automation Course for https://prog.kiev.ua/                *
- * ---------------------------------------------------------- *
- * Created by Yurii Voronenko                                 *
- * Email: yurii.voronenko@gmail.com                           *
- * ////////////////////////////////////////////////////////// *
- */
 public class MainPageLoggedIn  extends ForumPageObject
 {
-    /**
-     * Этот метод должен возвращать класс компонета для объекта страницы
-     * Определяет к какому компоненту привязан этот объект страницы
-     *
-     * @return Class
-     */
     @Override
     protected Class<? extends Component> componentClass()
     {
         return Forum.class;
     }
 
-    /**
-     * Єтот метод должен возвращать локатор готовности страницы
-     *
-     * @return By - locator
-     */
     @Override
     protected By readyLocator()
     {
