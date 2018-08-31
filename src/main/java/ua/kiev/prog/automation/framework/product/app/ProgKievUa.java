@@ -8,15 +8,6 @@ import ua.kiev.prog.automation.framework.product.test.LoginTest;
 
 import java.util.List;
 
-/**
- * ////////////////////////////////////////////////////////// *
- * Automation Framework                                       *
- * Automation Course for https://prog.kiev.ua/                *
- * ---------------------------------------------------------- *
- * Created by Yurii Voronenko                                 *
- * Email: yurii.voronenko@gmail.com                           *
- * ////////////////////////////////////////////////////////// *
- */
 public class ProgKievUa extends Product
 {
     final public Forum forum ()
