@@ -22,13 +22,12 @@ public class UsersPage extends ForumPageObject {
     }
 
     public UserWidget findUser(String userName) {
-        //colect record
         List<WebElement> list = this.driver().findElements(By.xpath("//div[@id='mlist']/table//tbody/tr"));
         List<UserWidget> userList = new ArrayList<>();
         for (int i = 1; i <= list.size(); i++) {
             userList.add(new UserWidget(this.driver(), By.xpath("//div[@id='mlist']/table//tbody/tr["+i+"]")));
         }
-        //find user name
+        
         UserWidget resultUser = null;
 
         for (UserWidget user : userList) {
@@ -37,7 +36,7 @@ public class UsersPage extends ForumPageObject {
                 break;
             }
         }
-        // recursion if not found
+        
         if (resultUser == null) {
             WebElement nextPage = this.driver().findElement(By.xpath("(//div[contains(@class, 'pagelinks')]//strong/following-sibling::a)[1]"));
             nextPage.click();
@@ -45,6 +44,4 @@ public class UsersPage extends ForumPageObject {
         }
         return resultUser;
     }
-
-
 }
