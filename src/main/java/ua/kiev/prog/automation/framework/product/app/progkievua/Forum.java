@@ -6,28 +6,14 @@ import ua.kiev.prog.automation.framework.product.app.progkievua.forum.MainPage;
 
 import java.util.Map;
 
-/**
- * ////////////////////////////////////////////////////////// *
- * Automation Framework                                       *
- * Automation Course for https://prog.kiev.ua/                *
- * ---------------------------------------------------------- *
- * Created by Yurii Voronenko                                 *
- * Email: yurii.voronenko@gmail.com                           *
- * ////////////////////////////////////////////////////////// *
- */
 public class Forum extends Component
 {
     @Override
     protected String name()
     {
-        return "Forum"; // Имя для отображения
+        return "Forum"; 
     }
 
-    /**
-     * Этот метод возвращает объект главной страницы при переходе на компонент
-     *
-     * @return MainPage
-     */
     final public MainPage mainPage()
     {
         return new MainPage();
