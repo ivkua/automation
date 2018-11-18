@@ -7,15 +7,6 @@ import ua.kiev.prog.automation.framework.core.product.component.object.widget.Te
 import ua.kiev.prog.automation.framework.product.app.progkievua.Forum;
 import ua.kiev.prog.automation.framework.product.app.progkievua.forum.base.ForumPageObject;
 
-/**
- * ////////////////////////////////////////////////////////// *
- * Automation Framework                                       *
- * Automation Course for https://prog.kiev.ua/                *
- * ---------------------------------------------------------- *
- * Created by Yurii Voronenko                                 *
- * Email: yurii.voronenko@gmail.com                           *
- * ////////////////////////////////////////////////////////// *
- */
 public class LoginPage extends ForumPageObject
 {
     private TextBox _username = new TextBox(this.driver(), By.xpath("//form[@id='frmLogin']//input[@name='user']"));
